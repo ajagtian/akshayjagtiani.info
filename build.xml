@@ -1,0 +1,19 @@
+<?xml version = "1.0"?>
+
+<project name = "akshayjagtiani.info"
+         basedir = "./build"
+         default = "project-info">
+
+    <property file="./build.properties"/>
+
+    <target name = "project-info">
+        <echo>${projectname-str} ${ant.project.name}</echo>
+        <echo>${antversion-str} ${ant.version}</echo>
+        <echo>${homepage-str} ${homepage}</echo>
+        <echo>${javaversion-str} ${ant.java.version}</echo>
+        <echo>${defaulttarget-str} ${ant.project.default-target}</echo>
+        <echo>${invokedtargets-str} ${ant.project.invoked-targets}</echo>
+        <echo>${antcorelib-str} ${ant.core.lib}</echo>
+    </target>
+
+</project>
